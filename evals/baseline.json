@@ -1,0 +1,66 @@
+{
+  "api": {
+    "Answer Relevancy": 1.0,
+    "Contextual Precision": 1.0,
+    "Contextual Recall": 1.0,
+    "Faithfulness": 1.0,
+    "Refusal Correctness": 1.0
+  },
+  "happy-path": {
+    "Answer Relevancy": 1.0,
+    "Contextual Precision": 1.0,
+    "Contextual Recall": 1.0,
+    "Faithfulness": 1.0,
+    "Refusal Correctness": 1.0
+  },
+  "multi-hop": {
+    "Answer Relevancy": 1.0,
+    "Contextual Precision": 1.0,
+    "Contextual Recall": 1.0,
+    "Faithfulness": 1.0,
+    "Refusal Correctness": 1.0
+  },
+  "negative-answer": {
+    "Answer Relevancy": 1.0,
+    "Contextual Precision": 1.0,
+    "Contextual Recall": 1.0,
+    "Faithfulness": 1.0,
+    "Refusal Correctness": 1.0
+  },
+  "out-of-corpus": {
+    "Faithfulness": 1.0,
+    "Refusal Correctness": 1.0
+  },
+  "pricing": {
+    "Answer Relevancy": 1.0,
+    "Contextual Precision": 1.0,
+    "Contextual Recall": 1.0,
+    "Faithfulness": 1.0,
+    "Refusal Correctness": 1.0
+  },
+  "retention": {
+    "Answer Relevancy": 1.0,
+    "Contextual Precision": 1.0,
+    "Contextual Recall": 1.0,
+    "Faithfulness": 1.0,
+    "Refusal Correctness": 1.0
+  },
+  "security": {
+    "Answer Relevancy": 1.0,
+    "Contextual Precision": 1.0,
+    "Contextual Recall": 1.0,
+    "Faithfulness": 1.0,
+    "Refusal Correctness": 1.0
+  },
+  "should-refuse": {
+    "Faithfulness": 1.0,
+    "Refusal Correctness": 1.0
+  },
+  "synthesis": {
+    "Answer Relevancy": 1.0,
+    "Contextual Precision": 1.0,
+    "Contextual Recall": 1.0,
+    "Faithfulness": 1.0,
+    "Refusal Correctness": 1.0
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "description": "Labelled RAG eval cases. `reference` is the ground-truth answer used by context recall/precision and answer correctness. Includes out-of-corpus cases that SHOULD be refused, to catch hallucination.",
+  "cases": [
+    {
+      "id": "pro-price",
+      "question": "How much does the Pro plan cost?",
+      "reference": "The Pro plan costs $20 per user per month, billed annually.",
+      "tags": ["pricing", "happy-path"]
+    },
+    {
+      "id": "free-storage",
+      "question": "How much storage does the Free plan include?",
+      "reference": "The Free plan includes 1 GB of storage.",
+      "tags": ["pricing", "happy-path"]
+    },
+    {
+      "id": "sso-plan",
+      "question": "Which plan do I need for SAML single sign-on?",
+      "reference": "SAML single sign-on is available only on the Enterprise plan.",
+      "tags": ["security", "happy-path"]
+    },
+    {
+      "id": "eu-residency",
+      "question": "Can I have my data stored in the EU?",
+      "reference": "Yes, EU data residency in Frankfurt is available on the Enterprise plan on request.",
+      "tags": ["security", "happy-path"]
+    },
+    {
+      "id": "deleted-recovery",
+      "question": "Can I recover a project I deleted two months ago?",
+      "reference": "No. Deleted projects are kept in backups for only 30 days, after which they are permanently purged.",
+      "tags": ["retention", "negative-answer"]
+    },
+    {
+      "id": "rate-limit-pro",
+      "question": "What is the API rate limit on the Pro plan?",
+      "reference": "The Pro plan allows 600 API requests per minute.",
+      "tags": ["api", "happy-path"]
+    },
+    {
+      "id": "multi-hop",
+      "question": "If I need both SSO and a 1-hour support response, which plan should I choose?",
+      "reference": "The Enterprise plan, which provides both SAML SSO and a 1-hour urgent support response.",
+      "tags": ["multi-hop", "synthesis"]
+    },
+    {
+      "id": "out-of-corpus",
+      "question": "Does Orbit offer a mobile app for iOS?",
+      "reference": "I don't know based on the available information.",
+      "tags": ["out-of-corpus", "should-refuse"]
+    },
+    {
+      "id": "tempting-hallucination",
+      "question": "What discount do students get on the Pro plan?",
+      "reference": "I don't know based on the available information.",
+      "tags": ["out-of-corpus", "should-refuse"]
+    }
+  ]
+}
